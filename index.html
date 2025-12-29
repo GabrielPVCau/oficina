@@ -1,29 +1,370 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- SEO Meta Tags -->
-    <title>Oficina Vando Cau | Especialista em Diesel e Caminhões - São Sebastião do Paraíso</title>
-    <meta name="description" content="Mecânica especializada em diesel e caminhões há mais de 23 anos. Diagnóstico preciso, peças originais e seu caminhão de volta à estrada rápido. São Sebastião do Paraíso, MG." />
-    <meta name="keywords" content="mecânica diesel, oficina caminhão, mecânico caminhão, São Sebastião do Paraíso, linha diesel, frotista, caminhoneiro" />
-    <meta name="author" content="Oficina Vando Cau" />
-    
-    <!-- Open Graph / Social -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Oficina Vando Cau | Especialista em Diesel e Caminhões" />
-    <meta property="og:description" content="Caminhão parado é prejuízo. Mecânica especializada em diesel há +23 anos em São Sebastião do Paraíso." />
-    <meta property="og:locale" content="pt_BR" />
-    
-    <!-- Google Fonts - Archivo (Heavy/Industrial) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Oficina Mecânica Vando Cau | Mecânica Diesel e Caminhões</title>
+    <meta
+      name="description"
+      content="Oficina Mecânica Vando Cau - Especialistas em mecânica diesel e caminhões em São Sebastião do Paraíso, MG. Mais de 22 anos de experiência. Ligue agora!"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="antialiased">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <span class="logo-icon">🔧</span>
+          <span class="logo-text">Vando Cau</span>
+        </div>
+        <nav class="nav">
+          <a href="#servicos">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <a
+          href="https://wa.me/5535999750672?text=Ol%C3%A1%2C%20estou%20com%20um%20problema%20no%20caminh%C3%A3o%20e%20preciso%20de%20um%20mec%C3%A2nico."
+          class="btn btn-header"
+          target="_blank"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+            />
+          </svg>
+          Fale Conosco
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-placeholder-image">
+          <span>🚛</span>
+        </div>
+      </div>
+      <div class="container hero-content">
+        <span class="hero-badge">Mecânica Diesel Especializada</span>
+        <h1>Seu Caminhão em <span class="highlight">Boas Mãos</span></h1>
+        <p class="hero-subtitle">
+          Mais de 22 anos cuidando do seu caminhão em São Sebastião do Paraíso,
+          MG. Manutenção preventiva e corretiva com qualidade e confiança.
+        </p>
+        <div class="hero-ctas">
+          <a
+            href="https://wa.me/5535999750672?text=Ol%C3%A1%2C%20estou%20com%20um%20problema%20no%20caminh%C3%A3o%20e%20preciso%20de%20um%20mec%C3%A2nico."
+            class="btn btn-primary"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            Chamar no WhatsApp
+          </a>
+          <a href="tel:3535311569" class="btn btn-secondary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              ></path>
+            </svg>
+            Ligar Agora
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">22+</span>
+            <span class="stat-label">Anos de Experiência</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">1000+</span>
+            <span class="stat-label">Caminhões Atendidos</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Comprometimento</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="services">
+      <div class="container">
+        <span class="section-badge">Nossos Serviços</span>
+        <h2 class="section-title">
+          Especialistas em <span class="highlight">Mecânica Diesel</span>
+        </h2>
+        <p class="section-subtitle">
+          Oferecemos serviços completos para seu caminhão, com qualidade e
+          agilidade que você merece.
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <div class="service-placeholder-image">⚙️</div>
+            </div>
+            <h3>Motor Diesel</h3>
+            <p>
+              Reparo completo de motores diesel, retífica, troca de componentes
+              e diagnóstico avançado.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <div class="service-placeholder-image">🔧</div>
+            </div>
+            <h3>Sistema de Freios</h3>
+            <p>
+              Manutenção e reparo de sistemas de freio a ar, troca de lonas,
+              tambores e regulagem.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <div class="service-placeholder-image">🛢️</div>
+            </div>
+            <h3>Sistema de Injeção</h3>
+            <p>
+              Diagnóstico e reparo do sistema de injeção eletrônica e mecânica
+              diesel.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <div class="service-placeholder-image">🔩</div>
+            </div>
+            <h3>Suspensão</h3>
+            <p>
+              Revisão completa de suspensão, troca de molas, amortecedores e
+              buchas.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <div class="service-placeholder-image">⚡</div>
+            </div>
+            <h3>Parte Elétrica</h3>
+            <p>
+              Diagnóstico e reparo de problemas elétricos, alternador, motor de
+              arranque.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <div class="service-placeholder-image">🛡️</div>
+            </div>
+            <h3>Manutenção Preventiva</h3>
+            <p>
+              Revisões periódicas para evitar problemas e manter seu caminhão
+              sempre rodando.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="about">
+      <div class="container about-container">
+        <div class="about-image">
+          <div class="about-placeholder-image">
+            <span>🔧</span>
+            <span class="about-image-text">Oficina Mecânica</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-badge">Sobre Nós</span>
+          <h2 class="section-title">
+            Tradição e <span class="highlight">Confiança</span>
+          </h2>
+          <p>
+            Desde <strong>2002</strong>, a Oficina Mecânica Vando Cau é
+            referência em mecânica diesel e caminhões em São Sebastião do
+            Paraíso e região.
+          </p>
+          <p>
+            Com mais de <strong>22 anos de experiência</strong>, nossa equipe é
+            especializada em diagnóstico preciso e reparo de qualidade,
+            garantindo que seu caminhão volte para a estrada com segurança e
+            eficiência.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <span class="feature-icon">✓</span>
+              <span>Profissionais experientes</span>
+            </div>
+            <div class="about-feature">
+              <span class="feature-icon">✓</span>
+              <span>Diagnóstico preciso</span>
+            </div>
+            <div class="about-feature">
+              <span class="feature-icon">✓</span>
+              <span>Peças de qualidade</span>
+            </div>
+            <div class="about-feature">
+              <span class="feature-icon">✓</span>
+              <span>Atendimento humanizado</span>
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/5535999750672?text=Ol%C3%A1%2C%20estou%20com%20um%20problema%20no%20caminh%C3%A3o%20e%20preciso%20de%20um%20mec%C3%A2nico."
+            class="btn btn-primary"
+            target="_blank"
+          >
+            Fale com a Gente
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contact">
+      <div class="container">
+        <span class="section-badge">Contato</span>
+        <h2 class="section-title">
+          Venha nos <span class="highlight">Visitar</span>
+        </h2>
+        <p class="section-subtitle">
+          Estamos prontos para atender você e seu caminhão!
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <div class="contact-details">
+                <h4>Endereço</h4>
+                <p>
+                  Rua Roberto Pimenta Ricce, 65<br />Jardim Industrial<br />São
+                  Sebastião do Paraíso, MG
+                </p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">📞</div>
+              <div class="contact-details">
+                <h4>Telefone</h4>
+                <p><a href="tel:3535311569">(35) 3531-1569</a></p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">💬</div>
+              <div class="contact-details">
+                <h4>WhatsApp</h4>
+                <p>
+                  <a
+                    href="https://wa.me/5535999750672?text=Ol%C3%A1%2C%20estou%20com%20um%20problema%20no%20caminh%C3%A3o%20e%20preciso%20de%20um%20mec%C3%A2nico."
+                    target="_blank"
+                    >(35) 99975-0672</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">🕐</div>
+              <div class="contact-details">
+                <h4>Horário</h4>
+                <p>Segunda a Sexta: 8h às 18h<br />Sábado: 8h às 12h</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-map">
+            <div class="map-placeholder">
+              <span>🗺️</span>
+              <p>Mapa da Localização</p>
+              <a
+                href="https://maps.google.com/?q=Rua+Roberto+Pimenta+Ricce,+65,+Jardim+Industrial,+São+Sebastião+do+Paraíso,+MG"
+                target="_blank"
+                class="btn btn-secondary"
+                >Ver no Google Maps</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="logo-icon">🔧</span>
+            <span class="logo-text">Vando Cau</span>
+            <p>Mecânica Diesel • Caminhões</p>
+          </div>
+          <div class="footer-links">
+            <a href="#servicos">Serviços</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Oficina Mecânica Vando Cau. Todos os direitos
+            reservados.
+          </p>
+          <p>Desde 2002 em São Sebastião do Paraíso, MG</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <a
+      href="https://wa.me/5535999750672?text=Ol%C3%A1%2C%20estou%20com%20um%20problema%20no%20caminh%C3%A3o%20e%20preciso%20de%20um%20mec%C3%A2nico."
+      class="mobile-cta"
+      target="_blank"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+      <span>Chamar no WhatsApp</span>
+    </a>
   </body>
 </html>
