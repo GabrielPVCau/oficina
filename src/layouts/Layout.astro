@@ -1,0 +1,115 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "Oficina Mecânica Vando Cau - Especializada em caminhões e veículos diesel em São Sebastião do Paraíso, MG. Mais de 20 anos de experiência em mecânica de caminhões Scania, Volvo, Mercedes, Iveco. Manutenção de motor diesel, freios a ar, câmbio, diferencial. Atendimento a frotas e autônomos. WhatsApp: (35) 99975-0672.",
+} = Astro.props;
+
+const keywords =
+  "oficina mecanica vando cau, oficina de caminhões, mecânica diesel, são sebastião do paraíso, mecânico de caminhão, oficina diesel, conserto de caminhão, manutenção de caminhão, motor diesel, mecânica de caminhões MG, oficina caminhão sul de minas, mecânico scania, mecânico volvo, mecânico mercedes, mecânico iveco, manutenção de frotas, oficina para transportadora, freio a ar caminhão, câmbio de caminhão, diferencial caminhão, Jardim Industrial São Sebastião do Paraíso";
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content="Oficina Mecânica Vando Cau" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="geo.region" content="BR-MG" />
+    <meta name="geo.placename" content="São Sebastião do Paraíso" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Oficina Mecânica Vando Cau" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://oficinavandocau.com.br/" />
+
+    <!-- Title -->
+    <title>{title}</title>
+
+    <!-- Schema.org JSON-LD for Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoRepair",
+        "name": "Oficina Mecânica Vando Cau",
+        "description": "Oficina especializada em caminhões e veículos diesel. Mais de 20 anos de experiência em São Sebastião do Paraíso, MG.",
+        "url": "https://oficinavandocau.com.br/",
+        "telephone": "+55-35-99975-0672",
+        "email": "mecanicavandocau@hotmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Roberto Pimenta Ricce, 65",
+          "addressLocality": "São Sebastião do Paraíso",
+          "addressRegion": "MG",
+          "postalCode": "37950-000",
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -20.9103,
+          "longitude": -46.9921
+        },
+        "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-12:00",
+        "priceRange": "$$",
+        "servesCuisine": "",
+        "areaServed": {
+          "@type": "City",
+          "name": "São Sebastião do Paraíso"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços de Mecânica Diesel",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Diagnóstico Diesel"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Manutenção Preventiva de Caminhões"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Mecânica de Caminhões"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Atendimento a Frotas"
+              }
+            }
+          ]
+        }
+      }
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <slot />
+  </body>
+</html>
